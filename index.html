@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+    </head>
+    <body> 
+            <div>
+                <label> Ingrese precio de costo </label>
+                <input type="number" id="preciocosto">
+            </div>
+            
+            <div>
+                <label> Ingrese porcentaje </label>
+                <input type="number" id="porcentaje">
+            </div>
+            
+            <div>
+                <button onclick="getPrecioFinal()"> Calcular precio final </button>
+            </div>
+
+            <div>
+                <label> Precio para la venta </label>
+                <div id="preciofinal"></div>
+            </div>
+
+            <!--
+            <div>
+                <button onclick="clean()"> Calculo nuevo </button>
+            </div>
+            -->
+            
+        <script type="text/javascript" src="process.js"> </script>
+
+    </body>
+</html>
