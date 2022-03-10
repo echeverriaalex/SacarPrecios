@@ -39,11 +39,23 @@ function PrecioDelPorcentajeConIVA(){
     return precioDelPorcentaje;
 }
 
-function getPrecioFinal(){
+function getPrecioFinalConIVA(){
 
-    let precioFinal  = PrecioDelPorcentajeConIVA() + getPrecioConIVA();
+    let precioFinal = PrecioDelPorcentajeConIVA() + getPrecioConIVA();
+    document.getElementById("precioFinalConIVA").innerHTML = precioFinal;
+}
 
-    //console.log(precioFinal);
-    document.getElementById("preciofinal").innerHTML = precioFinal;
-    //alert(precioFinal);
+/* FUNCIONES PARA CALCULAR SIN IVA  */
+
+function getPrecioPorcentajeSinIVA(){
+
+    let precioPorcentaje = (getPorcentaje() * getPrecioCosto()) / parseFloat(100);
+    return precioPorcentaje;
+} 
+
+
+function getPrecioFinalSinIVA(){
+
+    let precioFinal = getPrecioPorcentajeSinIVA() + getPrecioCosto();
+    document.getElementById("precioFinalSinIVA").innerHTML = precioFinal;
 }
