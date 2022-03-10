@@ -3,10 +3,46 @@
     margin: 0px;
 }
 
+
+
+:root{
+    
+    /*
+    
+    --height-nav: 200px;
+
+    --margin-list: 5%;    
+    --margin-product: 5%;
+
+    --product-size: 350px;
+    --width-product: 270px;
+    --margin-top-product: 15px;
+    --margin-right-product: 15px;
+    --margin-left-product: 15px;
+    --margin-buttom-product: 15px;
+    --scale: 1.1; 
+
+
+    --title-size-sucursales: 20px;
+    --title-size: 35px;  
+    --height-sucursales: 100px;
+    --width-title-product: 300px;
+    */
+    --div-logo: 100%;
+}
+
+
+@media (max-width: 720px) {
+
+    :root{
+        --div-logo: 100%;
+    }
+}
+
 .div-logo{
 
     background-color: red;
-    width: 100%;
+    width: var(--div-logo);
     height: 130px;
     margin-bottom: 50px;
 }
@@ -50,6 +86,7 @@ input{
     margin-bottom: 20px;
     margin: auto;
     text-align: center;
+    background-color: white;
     /*border: 5px;
     border-color: white;
     border-bottom: 10px green;*/
