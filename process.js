@@ -10,31 +10,39 @@ function getPorcentaje(){
     return porcentaje;
 }
 
+function getPorcentajeIVA(){
+
+    let porcentajeIVA= parseFloat(document.getElementById("porcentajeIVA").value);
+    return porcentajeIVA;
+}
+
 function clean(){
 
     //document.getElementById("formulario").reset();
 }
 
+function getPrecioDelIVA(){
+
+    let precioDelIVA = (getPorcentajeIVA() * getPrecioCosto()) / parseFloat(100);
+    return precioDelIVA;
+}
+
+function getPrecioConIVA(){
+
+    let precioConIVA = getPrecioDelIVA() + getPrecioCosto();
+    return precioConIVA;
+}
+
+function PrecioDelPorcentajeConIVA(){
+
+    let precioDelPorcentaje = (getPorcentaje() * getPrecioConIVA()) / parseFloat(100);
+    return precioDelPorcentaje;
+}
+
 function getPrecioFinal(){
 
-    /* 
-    var preciocosto = getPrecioCosto();
-    console.log(preciocosto);
+    let precioFinal  = PrecioDelPorcentajeConIVA() + getPrecioConIVA();
 
-    var porcentaje = getPorcentaje();
-    console.log(porcentaje);
-
-    console.log(typeof(preciocosto));
-
-    preciocosto = Number(preciocosto);
-    console.log(typeof(preciocosto));
-    */
-
-
-    var precioPorcentaje = (getPorcentaje() * getPrecioCosto()) / parseFloat(100);
-    var precioFinal = getPrecioCosto() + parseFloat(precioPorcentaje);
-
-    
     //console.log(precioFinal);
     document.getElementById("preciofinal").innerHTML = precioFinal;
     //alert(precioFinal);

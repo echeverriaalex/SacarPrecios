@@ -4,10 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Document</title>        
     </head>
     <body> 
+        <div class="div-logo">
+            <img src="imagenes/souto sin autoservicio.png">
+        </div>
+        
+        <div class="formulario">        
             <div>
                 <label> Ingrese precio de costo </label>
                 <input type="number" id="preciocosto">
@@ -17,12 +22,17 @@
                 <label> Ingrese porcentaje </label>
                 <input type="number" id="porcentaje">
             </div>
+
+            <div>
+                <label> IVA %</label>
+                <input type="number" id="porcentajeIVA" value="21">
+            </div>
             
             <div>
                 <button onclick="getPrecioFinal()"> Calcular precio final </button>
             </div>
 
-            <div>
+            <div class="resultado">
                 <label> Precio para la venta </label>
                 <div id="preciofinal"></div>
             </div>
@@ -32,6 +42,7 @@
                 <button onclick="clean()"> Calculo nuevo </button>
             </div>
             -->
+        </div>
             
         <script type="text/javascript" src="process.js"> </script>
 
