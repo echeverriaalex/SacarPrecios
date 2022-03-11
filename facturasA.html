@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title> Facturas A </title>        
+    </head>
+    <body>
+        <div class="div-logo">
+            <a href="index.html"> <img src="imagenes/souto sin autoservicio.png"> </a> 
+        </div>
+        
+        <div class="menu">
+            <a href="facturasB.html"> Ir a Facturas B </a>
+            <a href="facturasA.html"> Nueva Factura A </a>
+        </div>
+
+        <section class="formulario" id="facturasA">
+            <h2> Facturas A (con IVA)</h2>         
+            <div>
+                <label> Ingrese precio de costo </label>
+                <input type="number" id="precioCostoIVA">
+            </div>
+            
+            <div>
+                <label> Ingrese porcentaje </label>
+                <input type="number" id="porcentajeA">
+            </div>
+
+            <div>
+                <label> IVA %</label>
+                <input type="number" id="porcentajeIVA" value="21">
+            </div>
+            
+            <div>
+                <button onclick="getPrecioFinalConIVA()"> Calcular precio final </button>
+            </div>
+
+            <div class="resultado">
+                <label> Precio para la venta </label>
+                <div id="precioFinalConIVA"></div>
+            </div>
+
+            <!--
+            <div>
+                <button onclick="clean()"> Calculo nuevo </button>
+            </div>
+            -->
+        </section>
+        <script type="text/javascript" src="processFacturasA.js"> </script>
+    </body>
+    <footer>
+        <h3> Powered By Alex Nahuel Echeverria </h3>
+    </footer>
+</html>

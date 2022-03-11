@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title> Facturas B </title>        
+    </head>
+    <body>
+        <div class="div-logo">
+            <a href="index.html"> <img src="imagenes/souto sin autoservicio.png"> </a> 
+        </div>
+        
+        <div class="menu">
+            <a href="facturasA.html"> Ir a Facturas A </a>
+            <a href="facturasB.html"> Nueva Factura B </a>
+        </div>
+
+        <section class="formulario" id="facturasB">
+            <h2> Facturas B (sin IVA)</h2>       
+            <div>
+                <label> Ingrese precio de costo </label>
+                <input type="number" id="precioCostoSinIVA">
+            </div>
+            
+            <div>
+                <label> Ingrese porcentaje </label>
+                <input type="number" id="porcentajeSinIVA">
+            </div>
+            
+            <div>
+                <button onclick="getPrecioFinalSinIVA()"> Calcular precio final </button>
+            </div>
+
+            <div class="resultado">
+                <label> Precio para la venta </label>
+                <div id="precioFinalSinIVA"></div>
+            </div>
+
+            <!--
+            <div>
+                <button onclick="clean()"> Calculo nuevo </button>
+            </div>
+            -->
+        </section>
+
+        <script type="text/javascript" src="processFacturasB.js"> </script>
+    </body>
+    <footer>
+        <h3> Powered By Alex Nahuel Echeverria </h3>
+    </footer>
+</html>
