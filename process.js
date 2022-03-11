@@ -47,15 +47,27 @@ function getPrecioFinalConIVA(){
 
 /* FUNCIONES PARA CALCULAR SIN IVA  */
 
+function getPrecioCostoSinIVA(){
+
+    let preciocosto = parseFloat(document.getElementById("precioCostoSinIVA").value);
+    return preciocosto;
+}
+
+function getPorcentajeSinIVA(){
+
+    let porcentaje = parseFloat(document.getElementById("porcentajeSinIVA").value);
+    return porcentaje;
+}
+
 function getPrecioPorcentajeSinIVA(){
 
-    let precioPorcentaje = (getPorcentaje() * getPrecioCosto()) / parseFloat(100);
+    let precioPorcentaje = (getPorcentajeSinIVA() * getPrecioCostoSinIVA()) / parseFloat(100);
     return precioPorcentaje;
 } 
 
 
 function getPrecioFinalSinIVA(){
 
-    let precioFinal = getPrecioPorcentajeSinIVA() + getPrecioCosto();
+    let precioFinal = getPrecioPorcentajeSinIVA() + getPrecioCostoSinIVA();
     document.getElementById("precioFinalSinIVA").innerHTML = precioFinal;
 }
