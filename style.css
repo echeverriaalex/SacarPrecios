@@ -1,4 +1,5 @@
 *{
+    
     padding: 0px;
     margin: 0px;
 }
@@ -47,6 +48,7 @@
     width: var(--div-logo);
     height: 130px;
     margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 img{
@@ -94,7 +96,15 @@ input{
     border-bottom: 10px green;*/
 }
 
-.resultado{
+.resultadoPorUnidad{
+
+    margin-top: 30px;
+    background-color: grey;
+    width: 500px;
+    height: 150px;
+}
+
+.resultadoPorBulto{
 
     margin-top: 30px;
     background-color: grey;
@@ -153,6 +163,8 @@ footer{
     height: 100px;
     text-align: center;
     background-color: red;
+    position: absolute;
+    bottom: 0px;
 }
 
 footer h3{
