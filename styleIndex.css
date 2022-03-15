@@ -63,97 +63,6 @@ img{
     padding-bottom: 10px;
 }
 
-div button{
-
-    margin: auto;
-    /*margin-top: 20px;*/
-    display: block;
-    width: 130px;
-    height: 40px;
-    color: black;
-    background-color: red;
-    margin-bottom: 20px;
-}
-
-
-
-
-
-.formulario{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin: auto;
-    border-radius: 5px;
-    width: 500px;
-    height: 550px;
-    background-color: red;
-}
-
-input{
-
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin: auto;
-    text-align: center;
-    background-color: white;
-    /*border: 5px;
-    border-color: white;
-    border-bottom: 10px green;*/
-}
-
-.resultadoPorUnidad{
-
-    margin-top: 50px;
-    background-color: grey;
-    margin: auto;
-    width: 80%;    
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-.resultadoPorBulto{
-
-    margin-top: 30px;
-    background-color: grey;
-    width: 80%;
-    margin: auto;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-label{
-
-    margin-top: 10px;
-    margin: auto;
-    text-align: center;
-    display: block;
-    margin-bottom: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
-
-.resultado label{
-
-    margin: auto;
-    font-size: 30px;
-    text-align: center;
-}
-
-#precioFinalConIVA, #precioFinalSinIVA{
-
-    background-color: rgb(202, 202, 202);
-    text-align: center;
-    font-size: 100px;
-}
-
-#precioFinalUnidadSinIVA, #precioFinalBultoSinIVA{
-
-    background-color: rgb(202, 202, 202);
-    text-align: center;
-    font-size: 70px;
-}
-
 .menu{
 
     margin: auto;
@@ -162,7 +71,6 @@ label{
 }
 
 .mensaje-index{
-
     margin: auto;
     margin-top: 20px;
     text-align: center;
@@ -172,14 +80,12 @@ label{
 }
 
 .formulario-factura{
-
     margin-top: 40px;
     font-size: 20px;    
     display: block;
 }
 
 footer{
-
     width: 100%;
     height: 60px;
     text-align: center;
@@ -188,8 +94,7 @@ footer{
     bottom: 0px;
 }
 
-footer h3{
-    
+footer h3{    
     margin: auto;
     margin-top: 20px;
     display: block;
