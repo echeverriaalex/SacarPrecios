@@ -24,11 +24,17 @@ function getPrecioPorcentajeSinIVA(){
 
 function getPrecioFinalSinIVA(){
 
-    let precioFinalBulto = getPrecioPorcentajeSinIVA() + getPrecioCostoSinIVA();
-    document.getElementById("precioFinalBultoSinIVA").innerHTML = precioFinalBulto;
+    let precioFinal = getPrecioCostoSinIVA() + getPrecioPorcentajeSinIVA();
+    document.getElementById("precioFinalUnidadSinIVA").innerHTML = precioFinal; 
 
-    let precioFinalUnidad = precioFinalBulto / getCantidadBulto();
-    document.getElementById("precioFinalUnidadSinIVA").innerHTML = precioFinalUnidad;    
+    //let precioFinalUnidad = precioFinalBulto / getCantidadBulto();
+    //document.getElementById("precioFinalUnidadSinIVA").innerHTML = precioFinalUnidad;  
+
+    //let precioFinalBulto = getPrecioPorcentajeSinIVA() + getPrecioCostoSinIVA();
+    //document.getElementById("precioFinalBultoSinIVA").innerHTML = precioFinalBulto;
+
+     
+    
 }
 
 /*

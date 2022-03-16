@@ -4,10 +4,10 @@
 }
 
 
-/*
+
 :root{
     
-    
+    /*
     
     --height-nav: 200px;
 
@@ -32,6 +32,13 @@
     --div-form: 100%;
 
     --width-html: 100%;
+    */
+
+    --width-imag-logo: 200px
+    --width-form: 70%;
+    --margin-left-right: 5%;
+    --height-form: 60%;
+
 }
 
 
@@ -41,9 +48,13 @@
         --div-logo: 100%;
         --div-form: 100%;
         --width-html: 100%;
+        --width-imag-logo: 40%
+        --width-form: 60%;
+        --margin-left-right: 5%;
+        --height-form: 60%;
     }
 }
-*/
+
 
 .div-logo{
 
@@ -58,7 +69,7 @@ img{
     display: block;
     padding-top: 10px;
     margin: auto;
-    width: 40%;
+    width: var(--width-imag-logo);
     height: 70%;
     padding-bottom: 10px;
 }
@@ -75,18 +86,18 @@ div button{
     margin-bottom: 20px;
 }
 
-
-
-
-
 .formulario{
+    margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin: auto;
+    
     border-radius: 5px;
-    width: 500px;
-    height: 550px;
+    width: var(--width-form);
+    height: var(--height-form);
     background-color: red;
+    display: block;
+    margin-left: var(--margin-left-right);
+    margin-right: var(--margin-left-right);
 }
 
 input{
@@ -122,6 +133,15 @@ input{
     margin-bottom: 20px;
 }
 
+.precio{
+
+    height: 400px;
+    width: var(--width-form);
+    background-color: gray;
+    margin-left: var(--margin-left-right);
+    margin-right: var(--margin-left-right);
+}
+
 label{
 
     margin-top: 10px;
@@ -133,26 +153,7 @@ label{
     font-size: 20px;
 }
 
-.resultado label{
 
-    margin: auto;
-    font-size: 30px;
-    text-align: center;
-}
-
-#precioFinalConIVA, #precioFinalSinIVA{
-
-    background-color: rgb(202, 202, 202);
-    text-align: center;
-    font-size: 100px;
-}
-
-#precioFinalUnidadSinIVA, #precioFinalBultoSinIVA{
-
-    background-color: rgb(202, 202, 202);
-    text-align: center;
-    font-size: 70px;
-}
 
 .menu{
 
@@ -178,13 +179,34 @@ label{
     display: block;
 }
 
+.resultado label{
+
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+#precioFinalConIVA, #precioFinalSinIVA{
+
+    background-color: rgb(82, 9, 199);
+    text-align: center;
+    font-size: 100px;
+}
+
+#precioFinalUnidadSinIVA, #precioFinalBultoSinIVA{
+
+    background-color: rgb(57, 202, 13);
+    text-align: center;
+    font-size: 70px;
+}
+
 footer{
 
     width: 100%;
     height: 60px;
     text-align: center;
     background-color: red;
-    position: fixed;
+    position: sticky;
     bottom: 0px;
 }
 
