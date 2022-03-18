@@ -25,7 +25,7 @@ function getPrecioPorcentajeSinIVA(){
 function getPrecioFinalSinIVA(){
 
     let precioFinal = getPrecioCostoSinIVA() + getPrecioPorcentajeSinIVA();
-    document.getElementById("precioFinalUnidadSinIVA").innerHTML = precioFinal; 
+    document.getElementById("precioFinalUnidadSinIVA").innerHTML = "$ " + precioFinal; 
 
     //let precioFinalUnidad = precioFinalBulto / getCantidadBulto();
     //document.getElementById("precioFinalUnidadSinIVA").innerHTML = precioFinalUnidad;  

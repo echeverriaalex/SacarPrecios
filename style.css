@@ -135,7 +135,7 @@ input{
 
 .precio{
 
-    height: 400px;
+    height: 150px;
     width: var(--width-form);
     background-color: gray;
     margin-left: var(--margin-left-right);
@@ -152,8 +152,6 @@ label{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
-
-
 
 .menu{
 
@@ -195,9 +193,13 @@ label{
 
 #precioFinalUnidadSinIVA, #precioFinalBultoSinIVA{
 
-    background-color: rgb(57, 202, 13);
+    background-color: rgb(240, 245, 238);
     text-align: center;
     font-size: 70px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: var(--margin-left-right);
+    margin-right: var(--margin-left-right);
 }
 
 footer{
